@@ -1,0 +1,42 @@
+{
+  "name": "@humanfriend22/matrix-js",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A tiny package to manipulate two-dimensional arrays: matrixes",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "NODE_NO_WARNINGS=1 ava src/index.test.ts",
+    "dev": "NODE_NO_WARNINGS=1 ava --watch src/index.test.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humanfriend22/matrix-js.git"
+  },
+  "author": {
+    "name": "humanfriend22",
+    "email": "humanfriend22@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/humanfriend22/matrix-js/issues"
+  },
+  "homepage": "https://github.com/humanfriend22/matrix-js#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "ava": "^5.2.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module"
+    },
+    "nodeArguments": [
+      "--loader=ts-node/esm",
+      "--experimental-specifier-resolution=node"
+    ]
+  }
+}
